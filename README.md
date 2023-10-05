@@ -151,7 +151,7 @@ Decode the string in **Terminal**, and examine the decoded information.
 
 You will find what looks like the end of a URL and a strig of base64 code in front of it.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/cc7ff19c-b68f-4d13-af46-d8b3f90cd7da" height="70%" width="70%"/>
 </br>
 </br>
 
