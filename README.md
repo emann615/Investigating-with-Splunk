@@ -133,7 +133,7 @@ Use the following search query: `index=main PowerShell EventID=”4103”`
 
 79 events are returned in the results.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/10c40b00-7009-4003-96b1-8f6ff8398080" height="50%" width="50%"/>
 </br>
 </br>
 
