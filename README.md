@@ -42,6 +42,14 @@ Use the following search query: `index=main EventID="4720"`
 
 One event is returned in the results, and it shows the user **A1berto** was created on the **Micheal.Beaven** host.
 
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
 **A2) A1berto**
  	
 ### Q3) On the same host, a registry key was also updated regarding the new backdoor user. What is the full path of that registry key?
@@ -52,7 +60,15 @@ Add **Category** to selected fields.
 
 There are 5 values in the Category field. Select **Registry object added or deleted (rule: RegistryEvent)** to add to query, and you will see 2 events in the results.
 
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
 Next to **Target Object** on the first event, you will see the path of the registry key that was modified.
+
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
 
 **A3) HKLM\SAM\SAM\Domains\Account\Users\Names\A1berto**
 
@@ -62,6 +78,10 @@ Go back to the first search query: `index=main`
 
 Look at the **Users** field, and you will see a user named **Alberto**.
 
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
 **A4) Alberto**
 
 ### Q5) What is the command used to add a backdoor user from a remote computer?
@@ -69,6 +89,10 @@ Look at the **Users** field, and you will see a user named **Alberto**.
 Add **CommandLine** to selected fields.
 
 There are 19 values in the CommandLine field. One of the values shows a command used to create the A1berto user.
+
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
 
 **A5) C:\windows\System32\Wbem\WMIC.exe" /node:WORKSTATION6 process call create "net user /add A1berto paw0rd1**
 
@@ -78,7 +102,15 @@ Use the following search query: `index=main “A1berto”`
 
 Check the **Category** field to see if there is anything indicating a login. None of the values indicate an attempted login.
 
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
 You can also check the EventID field. None of the EventIDs indicate a login for A1berto.
+
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
 
 **A6) 0**
 
@@ -87,6 +119,10 @@ You can also check the EventID field. None of the EventIDs indicate a login for 
 Use the following search query: `index=main powershell`
 
 Check the **Hostname** field, and you wil see **James.Browne** is the only hostname listed.
+
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
 
 **A7) James.Browne**
 
@@ -97,16 +133,32 @@ Use the following search query: `index=main PowerShell EventID=”4103”`
 
 79 events are returned in the results.
 
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
 **A8) 79**
 
 ### Q9) An encoded Powershell script from the infected host initiated a web request. What is the full URL?
 
 Look at the full PowerShell command and you will see a long string of Base64 code.
 
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
 Decode the string in **Terminal**, and examine the decoded information.
 
 You will find what looks like the end of a URL and a strig of base64 code in front of it.
 
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
+
 Decode the string to get the rest of the URL path.
+
+<img src="" height="50%" width="50%"/>
+</br>
+</br>
 
 **A9) hxxp[://]10[.]10[.]10[.]5/news[.]php**
