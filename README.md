@@ -7,8 +7,7 @@ Splunk is one of the leading SIEM solutions in the market that provides the abil
 
    * [Languages and Utilities Used](#Languages-and-Utilities-Used)
    * [Environments Used](#Environments-Used)
-   * [Scenario 1](Scenario-1)
-   * [Scenario 2](Scenario-2)
+   * [Walk-Through](#Walk-Through)
 
 ## Languages and Utilities Used
 
