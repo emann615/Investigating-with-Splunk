@@ -58,7 +58,7 @@ Use the following search query: `index=main Hostname="Micheal.Beaven" "A1berto"`
 
 Check the **Category** field and you will see 5 valuess. Select **Registry object added or deleted (rule: RegistryEvent)** to add to query, and you will see 2 events in the results.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/8a7bb98b-8ffe-407c-ac77-f9bb273b2557" height="70%" width="70%"/>
 </br>
 </br>
 
