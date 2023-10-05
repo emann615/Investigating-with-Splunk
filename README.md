@@ -143,7 +143,7 @@ Use the following search query: `index=main PowerShell EventID=”4103”`
 
 Look at the full PowerShell command and you will see a long string of Base64 code.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/f37cd481-4d8c-4667-9626-05fedb88d546" height="70%" width="70%"/>
 </br>
 </br>
 
