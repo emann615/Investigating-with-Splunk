@@ -42,11 +42,11 @@ Use the following search query: `index=main EventID="4720"`
 
 One event is returned in the results, and it shows the user **A1berto** was created on the **Micheal.Beaven** host.
 
-<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/c2f1e999-37cf-4db5-94b6-14fbafffecb9" height="60%" width="60%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/c2f1e999-37cf-4db5-94b6-14fbafffecb9" height="70%" width="70%"/>
 </br>
 </br>
 
-<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/2e0067fa-8859-45b8-a5e8-195d804c1c8f" height="40%" width="40%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/2e0067fa-8859-45b8-a5e8-195d804c1c8f" height="30%" width="30%"/>
 </br>
 </br>
 
