@@ -22,7 +22,7 @@ Splunk is one of the leading SIEM solutions in the market that provides the abil
 
 ### Scenario
 
-### Q1) How many events were collected and Ingested in the index main?**
+### Q1) How many events were collected and Ingested in the index main?
 
 Use the following search query: `index=main`
 
@@ -30,7 +30,7 @@ The results show that 12,256 events have been logged.
 
 **A1) 12,256 events**
 
-**Q2) On one of the infected hosts, the adversary was successful in creating a backdoor user. What is the new username?**
+### Q2) On one of the infected hosts, the adversary was successful in creating a backdoor user. What is the new username?
 
 Use the following search query: `index=main EventID="4720"`
 * The 4720 EventID indicates a new user account was created.
@@ -39,7 +39,7 @@ One event is returned in the results, and it shows the user **A1berto** was crea
 
 **A2) A1berto**
  	
-**Q3) On the same host, a registry key was also updated regarding the new backdoor user. What is the full path of that registry key?**
+### Q3) On the same host, a registry key was also updated regarding the new backdoor user. What is the full path of that registry key?
 
 Use the following search query: `index=main Hostname="Micheal.Beaven" "A1berto"`
 
@@ -51,7 +51,7 @@ Next to **Target Object** on the first event, you will see the path of the regis
 
 **A3) HKLM\SAM\SAM\Domains\Account\Users\Names\A1berto**
 
-**Q4) Examine the logs and identify the user that the adversary was trying to impersonate.**
+### Q4) Examine the logs and identify the user that the adversary was trying to impersonate.
 
 Go back to the first search query: `index=main`
 
@@ -59,7 +59,7 @@ Look at the Users field, and you will see a user named Alberto.
 
 **A4) Alberto**
 
-**Q5) What is the command used to add a backdoor user from a remote computer?**
+### Q5) What is the command used to add a backdoor user from a remote computer?
 
 Add **CommandLine** to selected fields.
 
@@ -67,7 +67,7 @@ There are 19 values in the CommandLine field. One of the values shows a command 
 
 **A5) C:\windows\System32\Wbem\WMIC.exe" /node:WORKSTATION6 process call create "net user /add A1berto paw0rd1**
 
-**Q6) How many times was the login attempt from the backdoor user observed during the investigation?**
+### Q6) How many times was the login attempt from the backdoor user observed during the investigation?
 
 Use the following search query: `index=main “A1berto”`
 
@@ -77,7 +77,7 @@ You can also check the EventID field. None of the EventIDs indicate a login for 
 
 **A6) 0**
 
-**Q7) What is the name of the infected host on which suspicious Powershell commands were executed?**
+### Q7) What is the name of the infected host on which suspicious Powershell commands were executed?
 
 Use the following search query: index=main powershell
 
@@ -85,7 +85,7 @@ Check the Hostname field, and you wil see James.Browne is the only hostname list
 
 **A7) James.Browne**
 
-**Q8) PowerShell logging is enabled on this device. How many events were logged for the malicious PowerShell execution?**
+### Q8) PowerShell logging is enabled on this device. How many events were logged for the malicious PowerShell execution?
 
 Use the following search query: index=main PowerShell EventID=”4103”
 * The 4103 EventID indicates PowerShell logging enabled.
@@ -94,7 +94,7 @@ Use the following search query: index=main PowerShell EventID=”4103”
 
 **A8) 79**
 
-**Q9) An encoded Powershell script from the infected host initiated a web request. What is the full URL?**
+### Q9) An encoded Powershell script from the infected host initiated a web request. What is the full URL?
 
 Look at the full PowerShell command and you will see a long string of Base64 code.
 
