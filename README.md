@@ -157,7 +157,7 @@ You will find what looks like the end of a URL and a strig of base64 code in fro
 
 Decode the string to get the rest of the URL path.
 
-<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/1721e76f-79ed-4280-8094-01d3a84dc8f2" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/1721e76f-79ed-4280-8094-01d3a84dc8f2" height="70%" width="70%"/>
 </br>
 </br>
 
