@@ -29,6 +29,10 @@ Use the following search query: `index=main`
 
 The results show that 12,256 events have been logged.
 
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/27826692-1a40-448d-ac44-0040e9d46433" height="80%" width="80%"/>
+</br>
+</br>
+
 **A1) 12,256 events**
 
 ### Q2) On one of the infected hosts, the adversary was successful in creating a backdoor user. What is the new username?
