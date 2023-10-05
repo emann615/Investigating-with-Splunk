@@ -31,7 +31,7 @@ The results show that 12,256 events have been logged.
 **Q2) On one of the infected hosts, the adversary was successful in creating a backdoor user. What is the new username?**
 
 Use the following search query: `index=main EventID="4720"`
-* The 4720 event ID indicates a new user account was created.
+* The 4720 EventID indicates a new user account was created.
 
 One event is returned in the results, and it shows the user **A1berto** was created on the **Micheal.Beaven** host.
 
@@ -51,7 +51,7 @@ Next to **Target Object** on the first event, you will see the path of the regis
 
 **Q4) Examine the logs and identify the user that the adversary was trying to impersonate.**
 
-Go back to the first search query: index=main
+Go back to the first search query: `index=main`
 
 Look at the Users field, and you will see a user named Alberto.
 
@@ -59,46 +59,47 @@ Look at the Users field, and you will see a user named Alberto.
 
 **Q5) What is the command used to add a backdoor user from a remote computer?**
 
-Query: index=main
--	Add CommandLine to selected fields.
-o	19 values
-o	One value show to command used to create the A1berto user.
+Add **CommandLine** to selected fields.
+
+There are 19 values in the CommandLine field. One of the values shows a command used to create the A1berto user.
 
 **A5) C:\windows\System32\Wbem\WMIC.exe" /node:WORKSTATION6 process call create "net user /add A1berto paw0rd1**
 
 **Q6) How many times was the login attempt from the backdoor user observed during the investigation?**
 
-Query: index=main “A1berto”
--	Check the Category field to see if there is anything indicating a login.
-o	There is not.
--	You can also check the EventID field.
-o	There is no EventID indicating a login for A1berto.
+Use the following search query: `index=main “A1berto”`
+
+Check the Category field to see if there is anything indicating a login. None of the values indicate an attempted login.
+
+You can also check the EventID field. None of the EventIDs indicate a login for A1berto.
 
 **A6) 0**
 
 **Q7) What is the name of the infected host on which suspicious Powershell commands were executed?**
 
-Query: index=main powershell
--	Check the Hotname field.
-o	James.Browne is the only hostname.
+Use the following search query: index=main powershell
+
+Check the Hostname field, and you wil see James.Browne is the only hostname listed.
 
 **A7) James.Browne**
 
 **Q8) PowerShell logging is enabled on this device. How many events were logged for the malicious PowerShell execution?**
 
-Query: index=main PowerShell EventID=”4103”
--	4103 is the EventID for PowerShell logging enabled.
--	79 events are returned in the results.
+Use the following search query: index=main PowerShell EventID=”4103”
+* The 4103 EventID indicates PowerShell logging enabled.
+
+79 events are returned in the results.
 
 **A8) 79**
 
 **Q9) An encoded Powershell script from the infected host initiated a web request. What is the full URL?**
 
--	Look at the full PowerShell command.
--	There is a long string of Base64 code.
--	Decode the string in Terminal.
--	Examine the decoded information.
--	You will find what looks like the end of a URL and a strig of base64 code in front of it.
--	Decode the sting to get the rest of the URL path.
+Look at the full PowerShell command and you will see a long string of Base64 code.
+
+Decode the string in **Terminal**, and examine the decoded information.
+
+You will find what looks like the end of a URL and a strig of base64 code in front of it.
+
+Decode the string to get the rest of the URL path.
 
 **A9) hxxp[://]10[.]10[.]10[.]5/news[.]php**
