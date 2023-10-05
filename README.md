@@ -76,7 +76,7 @@ Go back to the first search query: `index=main`
 
 Look at the **Users** field, and you will see a user named **Alberto**.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/c9caf99e-26a0-4c5d-bb5d-5bd98409f998" height="70%" width="70%"/>
 </br>
 </br>
 
