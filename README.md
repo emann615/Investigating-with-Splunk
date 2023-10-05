@@ -86,7 +86,7 @@ Look at the **Users** field, and you will see a user named **Alberto**.
 
 Use the following search query: `index=main "A1berto"`
 
-Add **CommandLine** to selected fields.
+Add **CommandLine** to the selected fields.
 
 There are 19 values in the CommandLine field. One of the values shows a command used to create the A1berto user.
 
