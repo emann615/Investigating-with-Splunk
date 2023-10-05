@@ -84,11 +84,13 @@ Look at the **Users** field, and you will see a user named **Alberto**.
 
 ### Q5) What is the command used to add a backdoor user from a remote computer?
 
+Use the following search query: `index=main "A1berto"`
+
 Add **CommandLine** to selected fields.
 
 There are 19 values in the CommandLine field. One of the values shows a command used to create the A1berto user.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/55b45463-2ae1-4897-87d4-5ea5804baea4" height="70%" width="70%"/>
 </br>
 </br>
 
