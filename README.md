@@ -42,7 +42,7 @@ Use the following search query: `index=main EventID="4720"`
 
 One event is returned in the results, and it shows the user **A1berto** was created on the **Micheal.Beaven** host.
 
-<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/c2f1e999-37cf-4db5-94b6-14fbafffecb9" height="70%" width="70%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/c2f1e999-37cf-4db5-94b6-14fbafffecb9" height="60%" width="60%"/>
 </br>
 </br>
 
