@@ -1,7 +1,7 @@
 # Investigating with Splunk
 
 ## Desciption
-Snort is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS) developed and maintained by Martin Roesch and the Cisco Talos team. In this lab, I will run through two scenariors using Snort to identify and block malicious network traffic.
+Splunk is one of the leading SIEM solutions in the market that provides the ability to collect, analyze and correlate the network and machine logs in real-time. In this lab, I will use Splunk to investigate and answer questions about an attack.
 
 ## Table of Contents
 
