@@ -37,47 +37,55 @@ One event is returned in the results, and it shows the user **A1berto** was crea
 
 **A2) A1berto**
  	
-Q3)
-Query: index=main Hostname="Micheal.Beaven" "A1berto"
--	Add Category to selected fields.
-o	5 values
-o	Select Registry object added or deleted (rule: RegistryEvent) to add to query.
-	2 events
-	Next to Target Object you will see the path of the registry key that was added.
-	HKLM\SAM\SAM\Domains\Account\Users\Names\A1berto
-A3) HKLM\SAM\SAM\Domains\Account\Users\Names\A1berto
+**Q3) On the same host, a registry key was also updated regarding the new backdoor user. What is the full path of that registry key?**
 
-Q4)
+Use the following search query: `index=main Hostname="Micheal.Beaven" "A1berto"`
+
+Add **Category** to selected fields.
+
+There are 5 values in the Category field. Select **Registry object added or deleted (rule: RegistryEvent)** to add to query, and you will see 2 events in the results.
+
+Next to **Target Object** on the first event, you will see the path of the registry key that was modified.
+
+**A3) HKLM\SAM\SAM\Domains\Account\Users\Names\A1berto**
+
+**Q4) Examine the logs and identify the user that the adversary was trying to impersonate.**
+
+
+**A4) Alberto**
+
+Q5)
 Query: index=main
 -	Add CommandLine to selected fields.
 o	19 values
 o	One value show to command used to create the A1berto user.
-A4) C:\windows\System32\Wbem\WMIC.exe" /node:WORKSTATION6 process call create "net user /add A1berto paw0rd1
+A5) C:\windows\System32\Wbem\WMIC.exe" /node:WORKSTATION6 process call create "net user /add A1berto paw0rd1
 
-Q5)
+Q6)
 Query: index=main “A1berto”
 -	Check the Category field to see if there is anything indicating a login.
 o	There is not.
 -	You can also check the EventID field.
 o	There is no EventID indicating a login for A1berto.
-A5) 0
+A6) 0
 
-Q6)
+Q7)
 Query: index=main powershell
 -	Check the Hotname field.
 o	James.Browne is the only hostname.
-A6) James.Browne
+A7) James.Browne
 
-Q7)
+Q8)
 Query: index=main PowerShell EventID=”4103”
 -	4103 is the EventID for PowerShell logging enabled.
 -	79 events are returned in the results.
-A7) 79
+A8) 79
 
-Q8)
+Q9)
 -	Look at the full PowerShell command.
 -	There is a long string of Base64 code.
 -	Decode the string in Terminal.
 -	Examine the decoded information.
 -	You will find what looks like the end of a URL and a strig of base64 code in front of it.
 -	Decode the sting to get the rest of the URL path.
+A9)
