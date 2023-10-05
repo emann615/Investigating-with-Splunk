@@ -64,7 +64,7 @@ Check the **Category** field and you will see 5 valuess. Select **Registry objec
 
 Next to **Target Object** on the first event, you will see the path of the registry key that was modified.
 
-<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/0dfd8b46-e90e-417f-a249-edae9782f3ad" height="40%" width="40%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/0dfd8b46-e90e-417f-a249-edae9782f3ad" height="60%" width="60%"/>
 </br>
 </br>
 
