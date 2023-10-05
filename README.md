@@ -120,7 +120,7 @@ Use the following search query: `index=main powershell`
 
 Check the **Hostname** field, and you wil see **James.Browne** is the only hostname listed.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/75db1573-2157-4704-ab6e-d5a1f0ac1725" height="70%" width="70%"/>
 </br>
 </br>
 
