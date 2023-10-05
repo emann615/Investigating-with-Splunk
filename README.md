@@ -20,7 +20,9 @@ Splunk is one of the leading SIEM solutions in the market that provides the abil
 
 ## Walk-Through
 
-**Q1) How many events were collected and Ingested in the index main?**
+### Scenario
+
+### Q1) How many events were collected and Ingested in the index main?**
 
 Use the following search query: `index=main`
 
