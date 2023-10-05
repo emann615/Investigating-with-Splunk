@@ -57,7 +57,7 @@ Next to **Target Object** on the first event, you will see the path of the regis
 
 Go back to the first search query: `index=main`
 
-Look at the Users field, and you will see a user named Alberto.
+Look at the **Users** field, and you will see a user named **Alberto**.
 
 **A4) Alberto**
 
@@ -73,7 +73,7 @@ There are 19 values in the CommandLine field. One of the values shows a command 
 
 Use the following search query: `index=main “A1berto”`
 
-Check the Category field to see if there is anything indicating a login. None of the values indicate an attempted login.
+Check the **Category** field to see if there is anything indicating a login. None of the values indicate an attempted login.
 
 You can also check the EventID field. None of the EventIDs indicate a login for A1berto.
 
@@ -81,15 +81,15 @@ You can also check the EventID field. None of the EventIDs indicate a login for 
 
 ### Q7) What is the name of the infected host on which suspicious Powershell commands were executed?
 
-Use the following search query: index=main powershell
+Use the following search query: `index=main powershell`
 
-Check the Hostname field, and you wil see James.Browne is the only hostname listed.
+Check the **Hostname** field, and you wil see **James.Browne** is the only hostname listed.
 
 **A7) James.Browne**
 
 ### Q8) PowerShell logging is enabled on this device. How many events were logged for the malicious PowerShell execution?
 
-Use the following search query: index=main PowerShell EventID=”4103”
+Use the following search query: `index=main PowerShell EventID=”4103”`
 * The 4103 EventID indicates PowerShell logging enabled.
 
 79 events are returned in the results.
