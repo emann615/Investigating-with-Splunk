@@ -102,13 +102,13 @@ Use the following search query: `index=main “A1berto”`
 
 Check the **Category** field to see if there is anything indicating a login. None of the values indicate an attempted login.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/af752c7c-edc1-4b3a-8eb5-7a9cec0111b4" height="70%" width="70%"/>
 </br>
 </br>
 
 You can also check the EventID field. None of the EventIDs indicate a login for A1berto.
 
-<img src="" height="50%" width="50%"/>
+<img src="https://github.com/emann615/Investigating-with-Splunk/assets/117882385/f30fd23b-e3ca-4fc8-85b3-9103942660db" height="70%" width="70%"/>
 </br>
 </br>
 
