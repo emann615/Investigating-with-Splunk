@@ -56,9 +56,7 @@ One event is returned in the results, and it shows the user **A1berto** was crea
 
 Use the following search query: `index=main Hostname="Micheal.Beaven" "A1berto"`
 
-Add **Category** to selected fields.
-
-There are 5 values in the Category field. Select **Registry object added or deleted (rule: RegistryEvent)** to add to query, and you will see 2 events in the results.
+Check the **Category** field and you will see 5 valuess. Select **Registry object added or deleted (rule: RegistryEvent)** to add to query, and you will see 2 events in the results.
 
 <img src="" height="50%" width="50%"/>
 </br>
