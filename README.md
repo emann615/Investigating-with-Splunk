@@ -161,6 +161,6 @@ Decode the string to get the rest of the URL.
 </br>
 </br>
 
-The full URL is **http://10.10.10.5/new.php**
+The full URL is **http://10.10.10.5/new.php**.
 
 **A9) hxxp[://]10[.]10[.]10[.]5/news[.]php**
