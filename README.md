@@ -31,11 +31,12 @@ The results show that 12,256 events have been logged.
 **Q2) On one of the infected hosts, the adversary was successful in creating a backdoor user. What is the new username?**
 
 Use the following search query: `index=main EventID="4720"`
--	4720 is the event ID indicate that a new user account was created.
--	One event is returned in the results.
--	User A1berto was created on the  Micheal.Beaven host.
-A2) A1berto
+* The 4720 event ID indicates a new user account was created.
 
+One event is returned in the results, and it shows the user **A1berto** was created on the **Micheal.Beaven** host.
+
+**A2) A1berto**
+ 	
 Q3)
 Query: index=main Hostname="Micheal.Beaven" "A1berto"
 -	Add Category to selected fields.
