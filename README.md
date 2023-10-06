@@ -1,4 +1,4 @@
-# TryHackMe: Investigating with Splunk
+# Investigating with Splunk
 
 ## Desciption
 Splunk is one of the leading SIEM solutions in the market that provides the ability to collect, analyze and correlate the network and machine logs in real-time. In this lab, I will use Splunk to investigate and answer questions about an attack.
