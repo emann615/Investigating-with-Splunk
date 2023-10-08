@@ -1,7 +1,7 @@
 # Investigating with Splunk
 
 ## Desciption
-Splunk is one of the leading SIEM solutions in the market that provides the ability to collect, analyze and correlate the network and machine logs in real-time. In this lab, I will use Splunk to investigate and answer questions about an attack.
+Splunk is one of the leading SIEM solutions in the market that provides the ability to collect, analyze and correlate the network and machine logs in real-time. In this lab, I will run through a scenario and use Splunk to investigate a cyber attack.
 
 ## Table of Contents
 
