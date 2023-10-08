@@ -54,7 +54,7 @@ One event was returned in the results, and it showed the user **A1berto** was cr
  	
 ### Q3) On the same host, a registry key was also updated regarding the new backdoor user. What is the full path of that registry key?
 
-I filtered to show only logs from the Micheal.Beaven host containing the keyword A1berto using the following search query: `index=main Hostname="Micheal.Beaven" "A1berto"`
+I filtered to show only events from the Micheal.Beaven host containing the keyword A1berto using the following search query: `index=main Hostname="Micheal.Beaven" "A1berto"`
 
 I checked the **Category** field and saw 5 values. I selected the **Registry object added or deleted (rule: RegistryEvent)** value to add it to the search query and found 2 events in the results.
 
@@ -84,7 +84,7 @@ I looked at the **Users** field and saw a user named **Alberto** that the advers
 
 ### Q5) What is the command used to add a backdoor user from a remote computer?
 
-First, I fitered for logs containing the A1berto keyword using the following search query: `index=main "A1berto"`
+First, I fitered for events containing the A1berto keyword using the following search query: `index=main "A1berto"`
 
 Next, I added **CommandLine** to the selected fields.
 
@@ -114,7 +114,7 @@ I also checked the **EventID** field. None of the EventIDs indicated a login for
 
 ### Q7) What is the name of the infected host on which suspicious Powershell commands were executed?
 
-I filtered for logs containing the powershell keyword using the following search query: `index=main powershell`
+I filtered for events containing the powershell keyword using the following search query: `index=main powershell`
 
 Next, I checked the **Hostname** field and saw **James.Browne** was the only hostname listed.
 
